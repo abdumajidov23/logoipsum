@@ -1,0 +1,46 @@
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+
+  .plan_left,
+  .plan_right {
+    width: 45%;
+  }
+  .plan_left h1 {
+    width: 525px;
+    color: #19191b;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .plan_right {
+    width: 346px;
+    border-radius: 10px;
+    padding: 6px;
+    align-items: center;
+    display: flex;
+    background-color: #f7f7ff;
+    justify-content: space-between;
+  }
+  .plan_button1 {
+    width: 160px;
+    padding: 18px 0;
+    background-color: #5353d8;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    transition: 2s;
+    font-size: 16px;
+  }
+  
+  .plan_button2 {
+    width: 175px;
+    font-size: 16px;
+    color: #19191b;
+    border: none;
+    font-weight: bold;
+    background: transparent;
+    transition: 1s;
+  }
+}

@@ -1,0 +1,15 @@
+@mixin btn($bg: $bg-py) {
+  padding: 19px 60px;
+  background: $bg;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 10px;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+@mixin df(){
+    
+}

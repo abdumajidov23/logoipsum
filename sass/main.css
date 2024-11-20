@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1102px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  border: none;
+  outline: none;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+.plan .plan_left,
+.plan .plan_right {
+  width: 45%;
+}
+.plan .plan_left h1 {
+  width: 525px;
+  color: #19191b;
+  font-size: 60px;
+  font-weight: 700;
+}
+.plan .plan_right {
+  width: 346px;
+  border-radius: 10px;
+  padding: 6px;
+  align-items: center;
+  display: flex;
+  background-color: #f7f7ff;
+  justify-content: space-between;
+}
+.plan .plan_button1 {
+  width: 160px;
+  padding: 18px 0;
+  background-color: #5353d8;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  transition: 2s;
+  font-size: 16px;
+}
+.plan .plan_button2 {
+  width: 175px;
+  font-size: 16px;
+  color: #19191b;
+  border: none;
+  font-weight: bold;
+  background: transparent;
+  transition: 1s;
+}
+
+.header .navbar {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar__collection {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 1020px) {
+  .plan {
+    flex-wrap: wrap;
+  }
+  .plan_left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .plan_right {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 950px) {
+  .footer_cards {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 880px) {
+  .navbar .navbar__collection {
+    display: none;
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 0;
+  }
+  .card {
+    width: 45%;
+  }
+  .plan_left h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 780px) {
+  .navbar .ul {
+    display: none;
+  }
+  .card {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 580px) {
+  .card {
+    width: 100%;
+  }
+  .card:not(:last-child) {
+    margin_bottom: 30px;
+  }
+  .footer_cards {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 550px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .plan_left h1 {
+    font-size: 40px;
+  }
+  .card {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 430px) {
+  .plan_btn1 {
+    width: 120px;
+  }
+  .plan_btn2 {
+    width: 145px;
+  }
+  .footer_card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer_card h1 {
+    font-size: 50px;
+  }
+  .plan_right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.footer-cards {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.footer-cards .footer-card {
+  width: 330px;
+  background-color: #eae9f2;
+  padding: 40px 34px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 7px;
+  transition: 1.5s;
+}
+.footer-cards .footer-card p {
+  color: #696871;
+  font-size: 18px;
+  padding-bottom: 22px;
+}
+.footer-cards .footer-card h1 span {
+  font-size: 28px;
+}
+.footer-cards .footer-btn {
+  background-color: #fff;
+  color: #5454d4;
+  padding: 19px 0;
+  font-size: 17px;
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+.footer-cards .footer-card:hover {
+  background-color: #ff7143;
+  transform: scale(1.1, 1.1);
+}
+.footer-cards .footer-card:hover h1,
+.footer-cards .footer-card:hover p {
+  color: #fff;
+}
+.footer-cards .footer-card:hover .footer-btn {
+  background-color: #9f3919;
+  color: #fff;
+}
+.footer-cards .footer-btn {
+  cursor: pointer;
+}
+
+.features {
+  padding: 20px;
+}
+.features .features_wrapper {
+  width: 100%;
+  display: flex;
+  padding: 20px 20px;
+}
+.features .features_wrapper .features_image {
+  width: 100%;
+}
+.features .features_wrapper .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+.features .features_wrapper .info .big {
+  font-size: 50px;
+  font-weight: 700;
+  color: #19191b;
+  margin-bottom: 30px;
+}
+.features .features_wrapper .info .small {
+  width: 459px;
+  font-size: 20px;
+  color: #696871;
+  margin-bottom: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.features .features_wrapper .info a {
+  color: #5454d4;
+  text-decoration: none;
+}
+.features .features_wrapper .info a:hover {
+  color: #333;
+}
+.features .features_wrapper .info.second {
+  padding: 0;
+}
+.features .features_wrapper .features_img-second {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.features .small_info p {
+  margin-top: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 0;
+}
+.cards .card {
+  width: 31%;
+  text-align: center;
+  transition: 0.7s;
+}
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px #8f8f8f;
+}
+.cards .card_img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+.cards .card_img img {
+  width: 150px;
+  height: 100%;
+}
+.cards .card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #27272b;
+}
+.cards .card p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #706f77;
+}
+
+.hero {
+  padding: 20px;
+}
+.hero .hero_wrapper {
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+  padding: 100px 0;
+}
+.hero .hero_wrapper .hero_info {
+  width: 100%;
+}
+.hero .hero_wrapper .hero_info .big {
+  font-size: 80px;
+  margin-bottom: 30px;
+  color: #19191b;
+}
+.hero .hero_wrapper .hero_info .small {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.hero .hero_wrapper .hero_info .collapse {
+  display: flex;
+  gap: 30px;
+}
+.hero .hero_wrapper .hero_info .collapse .btn {
+  width: 211px;
+  height: 60px;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.hero .hero_wrapper .hero_info .collapse a {
+  cursor: pointer;
+}
+.hero .hero_wrapper .hero_image {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

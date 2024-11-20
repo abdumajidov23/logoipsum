@@ -1,0 +1,18 @@
+.header {
+  .navbar {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__collection {
+      display: flex;
+      gap: 50px;
+    }
+  
+  }
+}
+
+@media (max-width: 990xp) {
+  @mixin btn($bg: $bg-sy) {
+  }
+}

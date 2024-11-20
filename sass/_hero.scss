@@ -1,0 +1,44 @@
+.hero {
+  padding: 20px;
+
+  .hero_wrapper {
+    width: 100%;
+    display: flex;
+    background: #ffffff;
+    padding: 100px 0;
+
+    .hero_info {
+      width: 100%;
+      .big {
+        font-size: 80px;
+        margin-bottom: 30px;
+        color: #19191b;
+      }
+      .small {
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 30px;
+      }
+      .collapse {
+        display: flex;
+        gap: 30px;
+        .btn {
+          width: 211px;
+          height: 60px;
+          color: #fff;
+          padding: 10px 30px;
+          border-radius: 10px;
+          font-size: 17px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+    .hero_image {
+      width: 100%;
+    }
+  }
+}
